@@ -1,0 +1,419 @@
+:root {
+  /*COLORS*/
+  --text-primary: rgba(235, 235, 235, 1);
+  --text-secondary: rgba(255, 255, 255, 0.86);
+  --text: rgba(255, 255, 255, 0.999996);
+
+  --text-primary-b: rgba(0, 0, 0, 0.75);
+  --text-secondary-b: rgba(0, 0, 0, 0.8);
+  --text-b: rgba(0, 0, 0, 0.86);
+
+  /*FONTS*/
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+  --font-open: "Open Sans", sans-serif;
+  --font-accent: "Roboto", cursive;
+}
+
+/* GLOBAL */
+h1,
+.h1 {
+  color: var(--text-primary);
+}
+
+h2,
+.h2 {
+  color: var(--text-secondary);
+}
+
+h3,
+h4,
+h5,
+h6,
+p,
+.h3,
+.h4,
+.h5,
+.h6,
+.p {
+  color: var(--text);
+}
+
+.h2-black {
+  color: var(--text-secondary-b);
+}
+
+.h3-black,
+.h4-black,
+.h5-black,
+.h6-black,
+.p-black {
+  color: var(--text-b);
+}
+
+.poppins {
+  font-family: var(--font-secondary);
+}
+
+.accent {
+  font-family: var(--font-accent);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* NAVBAR */
+.button-to-top {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  color: whitesmoke;
+  font-size: 33px;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: none;
+  text-align: center;
+  padding: 3px 0;
+}
+
+.navbar-brand img {
+  width: 66px;
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-brand {
+  font-family: var(--font-accent);
+  font-size: 34px;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar {
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-nav {
+  font-family: var(--font-secondary);
+}
+
+.navbar-text {
+  margin-right: 2rem;
+}
+
+/* HEADER */
+
+#header {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../media/moto-barber.jpg);
+  background-size: cover;
+}
+
+#header:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 88px;
+}
+
+.header-desc {
+  font-family: var(--font-secondary);
+  font-weight: 300;
+}
+
+.header-button {
+  color: var(--text);
+  background: transparent;
+  padding: 8px 24px;
+  border: 1.5px solid var(--text);
+  outline: none;
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 300;
+  transition: all 0.3s ease-in;
+}
+
+.header-button:hover {
+  background: var(--text);
+  color: #303030;
+}
+
+/* ABOUT */
+
+#about {
+}
+
+.about-button {
+  color: var(--text-b);
+  background: transparent;
+  padding: 8px 24px;
+  border: 1.5px solid var(--text-b);
+  outline: none;
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 300;
+  transition: all 0.3s ease-in;
+}
+
+.about-button:hover {
+  background: var(--text-b);
+  color: #fefefe;
+}
+
+/* OFFER */
+
+.card-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: aliceblue;
+  min-height: 350px;
+}
+
+.card-photo {
+  min-height: 350px;
+  max-height: 350px;
+}
+
+.icon {
+  max-width: 100px;
+}
+
+.card-text-wrapper {
+  padding: 0 4rem;
+}
+
+/* GALLERY */
+
+/* footer */
+
+footer {
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer p a b {
+  color: rgb(149, 71, 151);
+  text-decoration: none;
+}
+
+#gallery {
+  background-color: #353535;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+#gallery:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: url(../media/bg-pattern.png);
+  opacity: 0.12;
+  background-size: contain;
+}
+
+.photo-gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-gallery .column {
+  flex: 33.3%;
+  width: auto;
+  overflow: hidden;
+  padding: 0px 4px;
+  width: 100%;
+}
+
+.photo-gallery a {
+  display: contents;
+}
+
+.column a img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(0.4) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.column img:hover {
+  filter: grayscale(0);
+}
+
+@media screen and (max-width: 800px) {
+  .photo-gallery .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .photo-gallery .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+/* CONTACT */
+
+#contact {
+  padding: 3rem 0;
+  min-height: 50vh;
+  background-color: #202020;
+  position: relative;
+  width: 100%;
+}
+
+#contact:before {
+  content: "";
+  position: absolute;
+  right: 110px;
+  bottom: 0;
+  width: 88%;
+  height: 88%;
+  background-image: url(../media/dancing-skeleton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  transform: scaleX(-1);
+}
+
+.contact-information-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-information {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.title-contact {
+  font-size: 3.3rem;
+  font-family: var(--font-accent);
+}
+
+.contact-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  letter-spacing: 1.4;
+}
+
+.contact-desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  color: white;
+  letter-spacing: 1;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  align-self: flex-start;
+  margin-right: 18px;
+  filter: invert(100%);
+}
+
+.contact-socials {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 44px;
+}
+
+.contact-socials i {
+  margin-right: 12px;
+}
+
+@media (max-width: 568px) {
+  .header-title {
+    font-size: 48px;
+  }
+
+  .header-desc {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-size: 28px;
+  }
+
+  .navbar-brand img {
+    display: none;
+  }
+
+  .card-photo {
+    min-height: 220px;
+    height: 220px;
+  }
+
+  .about-button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 569px) {
+  .card-photo {
+    width: 100%;
+  }
+}
